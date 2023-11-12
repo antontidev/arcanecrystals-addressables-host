@@ -9,7 +9,7 @@ services:
       - SERVER_PORT=80
       - SERVER_ROOT=/public
     volumes:
-      - ././Android:/
+      - ./Android:/
     labels:
       - "traefik.enable=true"
       - "traefik.frontend.entryPoints=https"
