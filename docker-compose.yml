@@ -1,9 +1,10 @@
-version: '3'
+version: '3.7'
+
 services:
-  example.org:
-    image: flashspys/nginx-static
-    container_name: example.org
+  server:
+    image: cupcakearmy/static
+    restart: unless-stopped
     ports:
-      - 8080:80
-    volumes: 
-      - ./Android:/static
+      - 80:80
+    volumes:
+      - ./Android:/srv:ro
