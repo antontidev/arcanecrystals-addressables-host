@@ -7,4 +7,4 @@ services:
     ports:
       - 80:80
     volumes:
-      - /root/Android:/srv:ro
+      - /root/Android:/srv/Android:ro
