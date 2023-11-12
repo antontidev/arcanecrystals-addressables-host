@@ -7,7 +7,7 @@ services:
       # Note: those envs are customizable but also optional
       - SERVER_HOST=127.0.0.1
       - SERVER_PORT=80
-      - SERVER_ROOT=/public
+      - SERVER_ROOT=/
     volumes:
       - ./Android:/
     labels:
